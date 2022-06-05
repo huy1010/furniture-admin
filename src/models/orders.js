@@ -1,4 +1,4 @@
-import {getOrderList,editOrder  } from '../services/orders';
+import {getOrderList, editOrder, delOrder} from '../services/orders';
 import { notification } from 'antd';
 
 export default {
@@ -24,7 +24,15 @@ export default {
           message: 'Update không thành công!'
         })
       }
-    }
+    },
+    *deleteOrder({ payload }, { put, call }) {
+      yield call(delOrder, payload);
+      const orderId = payload;
+      yield put({
+        type: 'delete',
+        payload: orderId,
+      });
+    },
   },
   reducers: {
     saveOrderList(state, action) {
@@ -38,6 +46,10 @@ export default {
           ...state,
           orderDetail: action.payload
         }
-      }
+      },
+      delete(state, action) {
+        console.log(action.payload);
+        return { ...state, orders: state.orders.filter(order => order.orderId !== action.payload) };
+      },
   },
 };

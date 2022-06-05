@@ -1,42 +1,250 @@
-@import (css)
-  url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=vietnamese');
-@import (css) 
-url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Kanit&family=Roboto&display=swap');
-html, body, #root {
+@import (css) url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=vietnamese');
+@import (css) url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Kanit&family=Roboto&display=swap');
+html,
+body,
+#root {
   height: 100%;
 }
 
 body {
   margin: 0;
 }
-:root{
-  --input-background: #EDF2F7;
-  --input-placeholder: #2D3748;
+:root {
+  --input-background: #edf2f7;
+  --input-placeholder: #2d3748;
   .ant-modal.cc {
     .ant-modal-content .ant-modal-header .ant-modal-title {
       font-size: 20px;
       text-align: center;
     }
   }
+  .anticon-search {
+    color: white;
+    width: 20px;
+    //  height: 2em;
+    > svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
   .ant-select.picker {
     display: flex;
     justify-content: space-around;
     .ant-select-selector {
-    margin-left: 40px;
-    border-radius: 5px;
-    border-style: hidden;
-    background-color: var(--input-background);
+      margin-left: 40px;
+      border-radius: 5px;
+      border-style: hidden;
+      background-color: var(--input-background);
     }
   }
-  .ant-table-thead > tr >th{
+  .ant-table-thead > tr > th {
     color: white;
     background: #5488b9 !important;
     font-weight: 700;
   }
   .ant-input {
-    border-color: #16B9C3;
+    border-color: #16b9c3;
     &:focus {
-      border-color: #16B9C3;
+      border-color: #16b9c3;
+    }
+  }
+  .ant-modal.modalProfile {
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .ant-modal.importDetail {
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  .ant-modal.changePass {
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+      }
+    }
+  }
+  .ant-modal.createBrand {
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .ant-modal.editBrand {
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .ant-select-auto-complete.complete {
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: var(--input-background);
+    color: var(--input-placeholder);
+    .ant-select-selector {
+      height: 40px;
+      border-radius: 5px;
+      border-style: hidden;
+      background-color: var(--input-background);
+      color: var(--input-placeholder);
+      .ant-select-selection-search {
+        .ant-select-selection-search-input {
+          height: 40px;
+        }
+      }
+    }
+  }
+  .ant-modal.cc {
+    height: 1000px;
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .ant-modal.variant-modal{
+    height: 1000px;
+    border-radius: 10px;
+    .ant-modal-content {
+      border-radius: 10px;
+      .ant-modal-header {
+        border-radius: 10px;
+        .ant-modal-title {
+          font-size: 22px;
+          text-align: center;
+          font-weight: 600;
+        }
+      } 
+    }
+    .ant-btn-primary{
+      background-color: #5488b9;
+    }
+  }
+  .ant-select-selection-search{
+    .ant-input{
+      border-color:#5488b9;
+    }
+  }
+  .ant-input-search-button{
+    background-color: #5488b9;
+  }
+  .ant-tabs-tab {
+    width: 170px;
+    align-items: center;
+    .ant-tabs-tab-btn {
+      padding-left: 45px;
+      width: 170px;
+    }
+  }
+  .ant-tabs-tab-active {
+    background-color: white;
+    border-color: #5488b9 !important;
+    border-style: solid;
+    border: 0px 0px 2px 0px;
+    .ant-tabs-tab-btn {
+      width: 170px;
+      font-weight: bold;
+      color: #5488b9 !important;
+    }
+  }
+  .ant-btn.PENDING {
+    border-color: #2e9e92;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #2e9e92;
+  }
+  .ant-btn.SHIPPING {
+    border-color: #2e729e;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #2e729e;
+  }
+  .ant-btn.COMPLETED {
+    border-color: #2e9e5a;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #2e9e5a;
+  }
+  .ant-btn.UNPAID {
+    border-color: #2e729e;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #2e729e;
+  }
+  .ant-btn.PAID {
+    border-color: #2e9e5a;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #2e9e5a;
+  }
+  .ant-btn.REFUND {
+    border-color: #c53a48;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #c53a48;
+  }
+  .ant-btn.CANCELED {
+    border-color: #c53a48;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #c53a48;
+  }
+  .ant-table-column-sorter-up{
+    >svg {
+      height: 17px;
+      width: 22px;
+    }
+  }
+  .ant-table-column-sorter-down {
+    >svg {
+      height: 17px;
+      width: 22px;
     }
   }
 }

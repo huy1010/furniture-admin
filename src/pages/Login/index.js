@@ -19,7 +19,6 @@ const Login = props => {
                  <div className={styles.logo}></div>
                  <div className={styles.welcome}>Welcome back!</div>
                  <div className={styles.guide}>Vui lòng điền thông tin đăng nhập bên dưới.</div>
-                 <div className={styles.note}>Gõ admin vô Username để đăng nhập thành công</div>
                  <Form
                     className={styles.loginForm}
                     name="login"

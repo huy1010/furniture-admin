@@ -1,14 +1,14 @@
 // ref: https://umijs.org/config/
 export default {
   theme: {
-   '@background-input': '#EDF2F7',
-   'font-family': 'Open Sans, serif',
+    '@background-input': '#EDF2F7',
+    'font-family': 'Open Sans, serif',
   },
   treeShaking: true,
   routes: [
     {
       path: '/login',
-      component: '../pages/Login/index'
+      component: '../pages/Login/index',
     },
     {
       path: '/',
@@ -29,20 +29,32 @@ export default {
           component: './Category/createCategory/index',
         },
         {
-          path: '/product',
+          path: '/category/edit/:id',
+          component: './Category/editCategory/index',
+        },
+        {
+          path: '/brands',
+          component: './Brands/index',
+        },
+        {
+          path: '/products',
           component: './Products/index',
         },
         {
-          path: '/product/create',
+          path: '/products/create',
           component: './Products/createProduct/index',
         },
         {
-          path: '/product/edit/:id',
+          path: '/products/edit/:id',
           component: './Products/editProduct/index.js',
         },
         {
-          path:'/import',
-          component:'./Import/index',  
+          path: '/products/:pk/variants/:id',
+          component: './Products/editVariant/index.js',
+        },
+        {
+          path: '/imports',
+          component: './Import/index',
         },
         {
           path: '/import/create',
@@ -51,6 +63,38 @@ export default {
         {
           path: '/import/edit/:id',
           component: './Import/editImport/index.js',
+        },
+        {
+          path: '/import/invoice/:id?',
+          component: './importInvoice/index.js',
+        },
+        {
+          path: '/orders',
+          component: './Orders/index',
+        },
+        {
+          path: '/orders/invoice/',
+          component: './orderInvoice/index',
+        },
+        {
+          path: '/users',
+          component: './User/index',
+        },
+        {
+          path: '/user/create',
+          component: './User/createUser/index',
+        },
+        {
+          path: '/vouchers',
+          component: './Voucher/index',
+        },
+        {
+          path: '/voucher/create',
+          component: './Voucher/createVoucher/index',
+        },
+        {
+          path: '/voucher/edit',
+          component: './Voucher/editVoucher/index',
         },
         {
           path: '/report',

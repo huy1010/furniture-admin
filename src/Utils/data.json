@@ -1,0 +1,1487 @@
+{
+    "product": [
+        {
+            "name": "Asus Vivobook 15 A515 OLED (A515EA-L12033W)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/27/A515-OLED-thinkpro-01.png?w=700&h=700",
+            "variants": [
+                {
+                    "name": "15.6, 1920x1080 px, 60 Hz • Pin 42 WHr",
+                    "sku": "Vivobooka515O03CF",
+                    "price": "18.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/27/A515-OLED-thinkpro-02.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core™ i5-1135G7, 4 nhân, 8 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, DDR4, 2666 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, OLED, 100% sRGB, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Iris Xe"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 512GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "42WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 3 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.7 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "HP Pavilion 15 (Intel Gen 11) (4P5G7PA)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/26/Pavilion-15-4P5G7PA-thinkpro-01.png?w=700&h=700",
+            "desc": "HP Pavilion 15 2021 là một chiếc laptop dành cho dân văn phòng với đầy đủ các yếu tố như kích thước mỏng nhẹ, màn hình rộng rãi và hiệu năng ổn định, có thể giúp cho người dùng hoàn thành tốt mọi công việc cũng như giải trí đa phương tiện một cách tốt nhất.          HP Pavilion 15 2021 được hoàn thiện với phần khung máy bằng nhôm màu bạc phủ mờ, mang lại vẻ sang trọng và đẳng cấp cho người dùng mặc dù chỉ với mức giá tầm trung. Với kích thước 15.6 inch và trọng lượng mỏng nhẹ chỉ với 1,46kg, HP Pavilion 15 2021 có tính linh động cao, giúp người dùng có thể thuận tiện mang vác di chuyển. Mặc dù không được trang bị khóa Kensington, thế nhưng bù lại HP Pavilion 15 2021 được trang bị một cảm biến vân tay tiện lợi, giúp chủ nhân có thể dễ dàng mở khóa thiết bị chỉ với một chạm. ",
+            "variants": [
+                {
+                    "name": "Core i5-1135G7 • Iris Xe • RAM 8 • SSD 256GB",
+                    "sku": "Pavi15G1113CF",
+                    "price": "17.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/9/pavi15g11-01.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i5-1135G7, 4 nhân, 8 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, DDR4, 3200 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, IPS, 65% sRGB, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Iris Xe"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "41WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 2 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.75 kg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Core i7-1165G7 • Intel Iris Xe • RAM 8 • SSD 512GB",
+                    "sku": "Pavi15G1106CU",
+                    "price": "21.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/9/pavi15g11-02.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i7 1165G7, 4 nhân, 8 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, DDR4, 3200 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920 x 1080 px, IPS, Matte, Cảm ứng, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Intel Iris Xe"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 512GB, HDD 0GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "41WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 2 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.75 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lenovo ThinkPad X1 Carbon Gen 5",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Lenovo-thinkpad-x1-carbon-gen-5.jpg?w=700&h=700",
+            "desc": "ThinkPad X1 Carbon Gen 5 là sản phẩm laptop doanh nhân cao cấp, hướng tới người dùng văn phòng, cần một chiếc Ultrabook có hiệu năng ổn định cùng trọng lượng nhẹ nhàng để có thể đồng hành tới bất cứ đâu. ThinkPad X1 Carbon vẫn được người dùng biết như một sản phẩm cao cấp, với thiết kế đơn giản, mỏng nhẹ. Chiếc X1 Carbon thế hệ thứ 5 này cũng vậy. Máy được thiết kế mỏng hơn so với thế hệ trước, được vát chéo nhẹ ở khu vực bản lề và kê tay. Toàn bộ các cạnh viền xung quanh được làm vuông vắn với vẻ nam tính thường thấy. Trông chiếc máy có phần giống chiếc ThinkPad T470s, nhưng lại mỏng hơn rất nhiều. Toàn bộ khung máy được làm bằng hợp kim magnesium, nhẹ nhàng mà chắc chắn. Nắp máy sử dụng sợi carbon tạo sự cứng cáp.",
+            "variants": [
+                {
+                    "name": "Core i5-6300U • Itel HD 520 • RAM 8 • SSD 256GB",
+                    "sku": "ThinkPadX1CG504NU",
+                    "price": "14.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/5/x1carbon5thgen-black-2.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i5 6300U, 2 nhân, 4 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, LPDDR3, 1866 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "14, 1920 x 1080 px, IPS, Matte, 87% sRGB, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Intel HD 520"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "57WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "2 x Type-C, 2 x USB-A, Thunderbolt"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.13 kg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Core i7-7600U • Intel HD 620 • RAM 16 • SSD 256GB",
+                    "sku": "ThinkPadX1CG506NU",
+                    "price": "18.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/5/x1carbon5thgen-black-1.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i7 7600U, 2 nhân, 4 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "16GB, LPDDR3, 2133 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "14, 1920 x 1080 px, IPS, Matte, 87% sRGB, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Intel HD 620"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "57WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "2 x Type-C, 2 x USB-A, Thunderbolt"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.1 kg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Core i5-7300U • Intel HD 620 • RAM 16 • SSD 256GB",
+                    "sku": "ThinkPadX1CG509NU",
+                    "price": "18.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/5/x1carbon5thgen-black-1.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i5 7300U, 2 nhân, 4 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "16GB, LPDDR3, 1866 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "14, 1920 x 1080 px, IPS, Matte, 87% sRGB, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Intel HD 620"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "57WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "2 x Type-C, 2 x USB-A, Thunderbolt"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.13 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "GIGABYTE G5 Gaming Laptop (GD-51S1123SO)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/17/gigag5-1.png?w=700&h=700",
+            "desc": "GIGABYTE G5 hiện là một trong những con bài chiến lược của GIGABYTE trong phân khúc gaming laptop tầm trung. Sở hữu thiết kế đơn giản nhưng bù lại là sự thanh lịch mà hiếm mẫu máy tính chơi game nào có được, kèm với đó là hiệu năng tương đối mạnh mẽ, GIGABYTE G5 xứng đáng là sự lựa chọn khá toàn diện trong phân khúc gaming laptop dưới 30 triệu VNĐ. Thay vì có một thiết kế gai góc, hầm hố, gaming, GIGABYTE G5 đi theo một triết lý thiết kế rất khác biệt – Đó chính là sự đơn giản và trang nhã. Điều này được thể hiện vô cùng tốt thông qua form dáng vuông vắn của máy, các đường cắt trên GIGABYTE G5 đều được thể hiện với thiên hướng dứt khoát, chi tiết thừa gần như không xuất hiện kể cả ở phần mặt đáy máy, nơi người dùng gần như không nhìn thấy được trong quá trình sử dụng hằng ngày.",
+            "variants": [
+                {
+                    "name": "Core i5-11400H • UHD Graphics • RAM 16 • SSD 512GB",
+                    "sku": "GigaG506CF",
+                    "price": "21.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/GIGABYTE%20G5%20Gaming%20Laptop%20(KC-5S11130SB)/GigaG505CF/GIGABYTE-G5-Gaming-Laptop-(KC-5S11130SB)-001.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Core i5 11400H, 6 nhân, 12 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "16GB"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, IPS, 100% sRGB, 144 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "UHD Graphics, GeForce RTX™ 3050"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 512GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "48.96WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 3 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "2.2 kg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Intel Core i5-10500H • Intel Core UHD • RAM 16 • SSD 256GB",
+                    "sku": "GigaG505CF",
+                    "price": "24.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/GIGABYTE%20G5%20Gaming%20Laptop%20(KC-5S11130SB)/GigaG505CF/GIGABYTE-G5-Gaming-Laptop-(KC-5S11130SB)-003.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "Intel Intel Core i5-10500H, 6 nhân, 12 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "16GB, DDR4, 3200 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, IPS, 100% sRGB, 144 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "Intel® Core™ UHD, GeForce® RTX 3060"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 512GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "48.96WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 3 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "2.2 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dell Inspiron 15 5515 AMD",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/dell_inspiron_15_5515.png?w=700&h=700",
+            "desc": "Với nhiều cải tiến về thiết kế, hiệu suất cũng như khả năng nhập liệu; Dell Inspirion 15 5515 sẽ rất phù hợp với đối tượng học sinh, sinh viên hay người đi làm - thường xuyên làm việc với các tác vụ văn phòng, học tập. Kết hợp với mức giá rẻ, hợp lý; đây sẽ là một trong những lựa chọn dễ tiếp cận nhất với người dùng phổ thông, trong khi vẫn đảm bảo trải nghiệm lý tưởng.  Với những sản phẩm Inspirion giá rẻ trước đây, thiết kế thường không phải điểm được Dell đầu tư quá nhiều. Nhưng đến Dell Inspirion 15 5515 thì mọi thứ đã phần nào thay đổi, khi sản phẩm của chúng ta đã khoác lên mình tấm áo mới - hiện đại và cao cấp hơn đáng kể. Về ngoại hình, Dell Inspirion 15 5515 được phủ lớp sơn Xám, đồng thời hơi ngả xanh một chút để tôn thêm vẻ thanh lị",
+            "variants": [
+                {
+                    "name": "Ryzen 5 5500U • AMD Radeon Graphics • RAM 8 • SSD 256GB",
+                    "sku": "Inspiron5515A03NS",
+                    "price": "17.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-2.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "AMD Ryzen 5 5500U, 6 nhân, 12 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, DDR4, 3200 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, WVA, Matte, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "AMD Radeon Graphics"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "54WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 2 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.63 kg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Ryzen 5 5500U • AMD Radeon Graphics 7 cores • RAM 8 • SSD 256GB",
+                    "sku": "Inspiron5515A01NS",
+                    "price": "18.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-3.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Vi xử lý (CPU)",
+                            "optionValue": "AMD Ryzen 5 5500U, 6 nhân, 12 luồng"
+                        },
+                        {
+                            "optionName": "RAM",
+                            "optionValue": "8GB, DDR4, 3200 MHz"
+                        },
+                        {
+                            "optionName": "Màn hình",
+                            "optionValue": "15.6, 1920x1080 px, WVA, Matte, Cảm ứng, 60 Hz"
+                        },
+                        {
+                            "optionName": "Card đồ họa (GPU)",
+                            "optionValue": "AMD Radeon™ Graphics (7 Cores)"
+                        },
+                        {
+                            "optionName": "Lưu trữ",
+                            "optionValue": "SSD 256GB"
+                        },
+                        {
+                            "optionName": "Pin",
+                            "optionValue": "54WHr"
+                        },
+                        {
+                            "optionName": "Kết nối chính",
+                            "optionValue": "1 x Type-C, 2 x USB-A"
+                        },
+                        {
+                            "optionName": "Trọng lượng",
+                            "optionValue": "1.75 kg"
+                        }
+                    ]
+                }
+            ]
+        }, /*man hinh*/
+        {
+            "name": "Màn hình ViewSonic VX2480-2K-SHD (23.8 inch/QHD/75Hz)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/12/Ma%CC%80n-hi%CC%80nh-ViewSonic-VX2480-SHDJ-24_-IPS-75Hz-7_1.jpg?w=700&h=700",
+            "desc": "ViewSonic VX2480 là sản phẩm được kết hợp hoàn hảo giữa chất lượng hình ảnh và thiết kế đẳng cấp. Màn hình FHD kích cỡ 24 inch, hiển thị hình ảnh sắc nét và video có độ chi tiết cao. Tốc độ làm mới 75Hz cho phép trải nghiệm mượt mà từ cuộn web đến chơi game. Chuyên đồ hoạ với 8 bit màu đi kèm 103%sRGB giúp hình ảnh luôn chính xác và chuẩn màu.",
+            "variants": [
+                {
+                    "name": "2560x1440, Chống chói, 75Hz",
+                    "sku": "VX24802K01CF",
+                    "price": "5.000.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/12/Ma%CC%80n-hi%CC%80nh-ViewSonic-VX2480-SHDJ-24_-IPS-75Hz-8_1.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Kích thước màn",
+                            "optionValue": "24"
+                        },
+                        {
+                            "optionName": "Độ phân giải",
+                            "optionValue": "2560 x 1440"
+                        },
+                        {
+                            "optionName": "Lớp phủ bề mặt",
+                            "optionValue": "Chống chói"
+                        },
+                        {
+                            "optionName": "Tấm nền",
+                            "optionValue": "IPS"
+                        },
+                        {
+                            "optionName": "Tần số quét",
+                            "optionValue": "75Hz"
+                        },
+                        {
+                            "optionName": "Độ phủ màu",
+                            "optionValue": "100 % sRGB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Màn hình LG 27QN600-B (27 inch/2K/IPS/75Hz)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/9/Ma%CC%80n%20hi%CC%80nh%20LG%2027QN600-B%20(27%20inch:2K:IPS:75Hz)%201.png?w=700&h=700",
+            "desc": "Màn hình LG 27QN600-B là sản phẩm được kết hợp hoàn hảo giữa chất lượng hình ảnh và thiết kế đẳng cấp. Màn hình FHD kích cỡ 24 inch, hiển thị hình ảnh sắc nét và video có độ chi tiết cao. Tốc độ làm mới 75Hz cho phép trải nghiệm mượt mà từ cuộn web đến chơi game. Chuyên đồ hoạ với 8 bit màu đi kèm 103%sRGB giúp hình ảnh luôn chính xác và chuẩn màu.",
+            "variants": [
+                {
+                    "name": "2560x1440, Chống chói, 75Hz",
+                    "sku": "LG27QN600B01CF",
+                    "price": "8.799.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/9/Ma%CC%80n%20hi%CC%80nh%20LG%2027QN600-B%20(27%20inch:2K:IPS:75Hz)%202.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Kích thước màn",
+                            "optionValue": "27"
+                        },
+                        {
+                            "optionName": "Độ phân giải",
+                            "optionValue": "2560 x 1440"
+                        },
+                        {
+                            "optionName": "Tỷ lệ",
+                            "optionValue": "16:9"
+                        },
+                        {
+                            "optionName": "Lớp phủ bề mặt",
+                            "optionValue": "Chống chói"
+                        },
+                        {
+                            "optionName": "Tấm nền",
+                            "optionValue": "IPS"
+                        },
+                        {
+                            "optionName": "Tần số quét",
+                            "optionValue": "75Hz"
+                        },
+                        {
+                            "optionName": "Độ phủ màu",
+                            "optionValue": "100 % sRGB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Màn hình Huawei MateView 28 UHD+ (MateView)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/2/huawei%20mateview%2028%202.jpg?w=700&h=700",
+            "desc": "Màn hình Huawei MateView 28 UHD+ là sản phẩm được kết hợp hoàn hảo giữa chất lượng hình ảnh và thiết kế đẳng cấp. Màn hình FHD kích cỡ 24 inch, hiển thị hình ảnh sắc nét và video có độ chi tiết cao. Tốc độ làm mới 75Hz cho phép trải nghiệm mượt mà từ cuộn web đến chơi game. Chuyên đồ hoạ với 8 bit màu đi kèm 103%sRGB giúp hình ảnh luôn chính xác và chuẩn màu.",
+            "variants": [
+                {
+                    "name": "3840x2560, Chống chói, 60Hz",
+                    "sku": "MateView01CF",
+                    "price": "17.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/2/huawei%20mateview%2028%203.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Kích thước màn",
+                            "optionValue": "28.2"
+                        },
+                        {
+                            "optionName": "Độ phân giải",
+                            "optionValue": "3840 X 2560"
+                        },
+                        {
+                            "optionName": "Tỷ lệ",
+                            "optionValue": "3:2"
+                        },
+                        {
+                            "optionName": "Lớp phủ bề mặt",
+                            "optionValue": "Chống chói"
+                        },
+                        {
+                            "optionName": "Tấm nền",
+                            "optionValue": "IPS"
+                        },
+                        {
+                            "optionName": "Tần số quét",
+                            "optionValue": "60 Hz"
+                        },
+                        {
+                            "optionName": "Độ phủ màu",
+                            "optionValue": "100 % sRGB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Màn Hình Thông Minh Samsung M8 (32 inch/4K/60hz) (LS32BM801)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Ma%CC%80n%20Hi%CC%80nh%20Tho%CC%82ng%20Minh%20Samsung%20M8%20(32%20inch:4K:60hz)%2089.png?w=700&h=700",
+            "desc": "Màn hình Huawei MateView 28 UHD+ là sản phẩm được kết hợp hoàn hảo giữa chất lượng hình ảnh và thiết kế đẳng cấp. Màn hình FHD kích cỡ 24 inch, hiển thị hình ảnh sắc nét và video có độ chi tiết cao. Tốc độ làm mới 75Hz cho phép trải nghiệm mượt mà từ cuộn web đến chơi game. Chuyên đồ hoạ với 8 bit màu đi kèm 103%sRGB giúp hình ảnh luôn chính xác và chuẩn màu.",
+            "variants": [
+                {
+                    "name": "3840x2560, Chống chói, 60Hz",
+                    "sku": "SamsungM801CF",
+                    "price": "17.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Ma%CC%80n%20Hi%CC%80nh%20Tho%CC%82ng%20Minh%20Samsung%20M8%20(32%20inch:4K:60hz)%2089.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Kích thước màn",
+                            "optionValue": "32"
+                        },
+                        {
+                            "optionName": "Độ phân giải",
+                            "optionValue": "3840 X 2160"
+                        },
+                        {
+                            "optionName": "Tỷ lệ",
+                            "optionValue": "16:9"
+                        },
+                        {
+                            "optionName": "Lớp phủ bề mặt",
+                            "optionValue": "Chống chói"
+                        },
+                        {
+                            "optionName": "Tấm nền",
+                            "optionValue": "VA"
+                        },
+                        {
+                            "optionName": "Tần số quét",
+                            "optionValue": "60 Hz"
+                        },
+                        {
+                            "optionName": "Độ phủ màu",
+                            "optionValue": "100 % sRGB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Studio Display",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/Apple-Studio-Display-thinkpro-1.jpg?w=700&h=700",
+            "desc": "Màn hình Studio Display là sản phẩm được kết hợp hoàn hảo giữa chất lượng hình ảnh và thiết kế đẳng cấp. Màn hình FHD kích cỡ 24 inch, hiển thị hình ảnh sắc nét và video có độ chi tiết cao. Tốc độ làm mới 75Hz cho phép trải nghiệm mượt mà từ cuộn web đến chơi game. Chuyên đồ hoạ với 8 bit màu đi kèm 103%sRGB giúp hình ảnh luôn chính xác và chuẩn màu.",
+            "variants": [
+                {
+                    "name": "3840x2560, Chống chói, 60Hz",
+                    "sku": "StudioDisplay01CS",
+                    "price": "40.900.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Ma%CC%80n%20Hi%CC%80nh%20Tho%CC%82ng%20Minh%20Samsung%20M8%20(32%20inch:4K:60hz)%2089.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Kích thước màn",
+                            "optionValue": "27"
+                        },
+                        {
+                            "optionName": "Độ phân giải",
+                            "optionValue": "5120 x 2880"
+                        },
+                        {
+                            "optionName": "Tỷ lệ",
+                            "optionValue": "16:9"
+                        },
+                        {
+                            "optionName": "Lớp phủ bề mặt",
+                            "optionValue": "Gương"
+                        },
+                        {
+                            "optionName": "Tấm nền",
+                            "optionValue": "Retina"
+                        },
+                        {
+                            "optionName": "Tần số quét",
+                            "optionValue": "60 Hz"
+                        },
+                        {
+                            "optionName": "Độ phủ màu",
+                            "optionValue": "100 % sRGB"
+                        }
+                    ]
+                }
+            ]
+        },
+        /*Chuot*/
+        {
+            "name": "Chuột Razer Basilisk Ultimate (RZ01-03170100-R3A1)",
+            "image": "https://media-api-beta.thinkpro.vn/backend/sku-import/chuot/Chuot%20Razer%20Basilisk%20Ultimate%20(RZ01-03170100-R3A1)/RZBU01CF/Chuot-Razer-Basilisk-Ultimate-(RZ01-03170100-R3A1)-002.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Đen",
+                    "sku": "RZBU01CF",
+                    "price": "3.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/sku-import/chuot/Chuot%20Razer%20Basilisk%20Ultimate%20(RZ01-03170100-R3A1)/RZBU01CF/Chuot-Razer-Basilisk-Ultimate-(RZ01-03170100-R3A1)-001.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Mac/Windows"
+                        },
+                        {
+                            "optionName": "Loại kết nối",
+                            "optionValue": "Không dây"
+                        },
+                        {
+                            "optionName": "Kết nối qua",
+                            "optionValue": "Đầu USB Wireless 2.4GHz"
+                        },
+                        {
+                            "optionName": "Đèn Led",
+                            "optionValue": "14 vùng LED RGB Chroma có thể tinh chỉnh"
+                        },
+                        {
+                            "optionName": "Click không tiếng",
+                            "optionValue": "Có"
+                        },
+                        {
+                            "optionName": "Thời lượng pin",
+                            "optionValue": "100 giờ"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chuột Gaming Logitech G402 Hyperion Fury Ultra",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/logitech-g402-hyperion-fury-01.png?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Đen",
+                    "sku": "LogiG40201CF",
+                    "price": "719.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/logitech-g402-hyperion-fury-02.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows"
+                        },
+                        {
+                            "optionName": "Loại kết nối",
+                            "optionValue": "Có dây"
+                        },
+                        {
+                            "optionName": "Kết nối qua",
+                            "optionValue": "USB"
+                        },
+                        {
+                            "optionName": "Đèn Led",
+                            "optionValue": "Đèn LED RGB LIGHTSYNC"
+                        },
+                        {
+                            "optionName": "Click không tiếng",
+                            "optionValue": "Có"
+                        },
+                        {
+                            "optionName": "Thời lượng pin",
+                            "optionValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chuột Razer Pro Click (Humanscale-Wireless_RZ01-02990100-R3M1)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/19/chuot-razer-pro-click-wireless-01.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Grey",
+                    "sku": "RzerProClickCF",
+                    "price": "2.290.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/19/chuot-razer-pro-click-wireless-02.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Mac/Windows"
+                        },
+                        {
+                            "optionName": "Loại kết nối",
+                            "optionValue": "Không dây"
+                        },
+                        {
+                            "optionName": "Kết nối qua",
+                            "optionValue": "Bluetooth"
+                        },
+                        {
+                            "optionName": "Đèn Led",
+                            "optionValue": "Không"
+                        },
+                        {
+                            "optionName": "Click không tiếng",
+                            "optionValue": "Có"
+                        },
+                        {
+                            "optionName": "Thời lượng pin",
+                            "optionValue": "200 giờ"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chuột ASUS TUF Gaming M3",
+            "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/3/29/tufm3-1.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Đen",
+                    "sku": "TUFM3CS",
+                    "price": "400.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/3/29/tufm3-2.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Mac/Windows"
+                        },
+                        {
+                            "optionName": "Loại kết nối",
+                            "optionValue": "Có dây"
+                        },
+                        {
+                            "optionName": "Kết nối qua",
+                            "optionValue": "USB 2.0"
+                        },
+                        {
+                            "optionName": "Đèn Led",
+                            "optionValue": "RGB ở LOGO (Hỗ trợ Aura Sync qua phần mềm Armoury Crate)"
+                        },
+                        {
+                            "optionName": "Click không tiếng",
+                            "optionValue": "Có"
+                        },
+                        {
+                            "optionName": "Thời lượng pin",
+                            "optionValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chuột logitech M331 Silent (Black)",
+            "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/m331-01jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Đen",
+                    "sku": "TUFM3CS",
+                    "price": "339.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/m331-01jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Mac/Windows/Linux"
+                        },
+                        {
+                            "optionName": "Loại kết nối",
+                            "optionValue": "Không dây"
+                        },
+                        {
+                            "optionName": "Kết nối qua",
+                            "optionValue": "USB Receiver"
+                        },
+                        {
+                            "optionName": "Đèn Led",
+                            "optionValue": "Không có"
+                        },
+                        {
+                            "optionName": "Click không tiếng",
+                            "optionValue": "Có"
+                        },
+                        {
+                            "optionName": "Thời lượng pin",
+                            "optionValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        /*Ban phim*/
+        {
+            "name": "Bàn phím cơ keydous NJ80 AP (Plate Thép -Gateron Yellow switch)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/nj80-1.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Gateron Yellow Switch - Hotswap",
+                    "sku": "KDNJ8006CF",
+                    "price": "2.790.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/nj80-1.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows/MacOS"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "75%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Gateron Yellow Switch - Hotswap"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "Keycap PBT - Cherry profile"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kailh box brown switch - Hotswap",
+                    "sku": "KDNJ8002CF",
+                    "price": "2.790.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/nj80-1.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows/MacOS"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "75%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Kailh box brown switch - Hotswap"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "Keycap PBT - Cherry profile"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bàn phím cơ AKKO 3084B Plus Black Pink (AKKO CS Switch Jelly Purple)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/3084b-01.jpg?w=700&h=700",
+            "desc": "AKKO 3084B PLUS BLACK PINK vẫn giữ đúng tinh thần truyền thống từ trước đến nay mà AKKO đã xây dựng – trẻ trung, năng động và có phần huyền bí. Phiên bản người viết đang trên tay có tên là Black Pink. Rõ ràng rồi, đây là cách đặt tên đầy chủ ý của AKKO, khi mà họ muốn nhấn mạnh rằng chiếc bàn phím này mang âm hưởng sôi động và đầy tính trẻ đến từ một trong những nhóm nhạc nữ đỉnh cao nhất thế giới hiện nay!",
+            "variants": [
+                {
+                    "name": "Akko CS Switch - Jelly Purple",
+                    "sku": "AK3084BP01CF",
+                    "price": "2.099.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/3084b-01.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows/MacOS/Linux"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "75%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Akko CS Switch - Jelly Purple"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "PBT Double-Shot - ASA Profile"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bàn phím cơ Không dây Mistel Q75  Bunny (Cherry MX Red Switch)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Q75%20Bunny%20-1.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Cherry MX Red Switch",
+                    "sku": "MISTELBQ7501CF",
+                    "price": "2.440.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Q75%20Bunny%20-2.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "75%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Cherry MX Red Switch"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "PBT DoubleShot"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bàn phím cơ Leopold FC660M PD Sweden White Case (Cherry MX Blue Swtich)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/16/FC660MPD%20Sweden%20White%201.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Switch Cherry MX Blue",
+                    "sku": "FC660MPDSWC02CF",
+                    "price": "2.670.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/16/FC660MPD%20Sweden%20White%203.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "65%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Switch Cherry MX Blue"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "1.5mm PBT Double Shot"
+                        }
+                    ]
+                },
+                {
+                    "name": "Switch Cherry MX Red",
+                    "sku": "FC660MPDSWC01CF",
+                    "price": "2.870.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/16/FC660MPD%20Sweden%20White%201.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "65%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "Switch Cherry MX Red"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "1.5mm PBT Double Shot"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bàn phím cơ AKKO 3098N Multi-modes NEON",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-neon-01.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "TTC ACE Switch (Cho phép hotswap)",
+                    "sku": "AK3098NMNEON01CF",
+                    "price": "2.740.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-neon-02.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Loại bàn phím",
+                            "optionValue": "Phím cơ"
+                        },
+                        {
+                            "optionName": "Tương thích",
+                            "optionValue": "Windows"
+                        },
+                        {
+                            "optionName": "Layout",
+                            "optionValue": "100%"
+                        },
+                        {
+                            "optionName": "Loại switch",
+                            "optionValue": "TTC ACE Switch (Cho phép hotswap)"
+                        },
+                        {
+                            "optionName": "Keycap",
+                            "optionValue": "PBT Double-Shot, ASA profile"
+                        }
+                    ]
+                }
+            ]
+        },
+        /*ghe cong thai hoc*/
+        {
+            "name": "Ghế Công Thái Học Epione Easy Chair (Không bao gồm kê chân - All Back)",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/30/easy%20chair%202.jpg?w=700&h=700",
+            "desc": "Điểm khác biệt nổi bật làm cho chiếc ghế công thái học Epione Easy Chair khác biệt so với các sản phẩm trong cùng phân khúc chính là cơ chế hỗ trợ ATLAS độc quyền. Cụ thể hơn, ATLAS (Adjust Tuning Lumbar Area Support) là cơ chế trợ lưng có khả năng điều chỉnh lưng linh động đến 6cm và tác động vào bất kỳ vùng thắt lưng nào mà người dùng mong muốn. Ngoài ra, cơ chế này còn có thể tương thích và điều chỉnh linh hoạt phù hợp với nhiều vóc dáng cơ thể khác nhau, từ đó mà phù hợp với đa số đối tượng người dùng.",
+            "variants": [
+                {
+                    "name": "Đen",
+                    "sku": "EasyChair01CF",
+                    "price": "5.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/30/easy%20chair%203.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu lưng ghế",
+                            "optionValue": "Lưới Krall&Roth"
+                        },
+                        {
+                            "optionName": "Chất liệu mâm ghế",
+                            "optionValue": "Lưới Krall&Roth"
+                        },
+                        {
+                            "optionName": "Khung lưng",
+                            "optionValue": "Nhựa ABS"
+                        },
+                        {
+                            "optionName": "Chân ghế",
+                            "optionValue": "Nhựa"
+                        },
+                        {
+                            "optionName": "Tựa đầu",
+                            "optionValue": "Điều chỉnh 3D"
+                        },
+                        {
+                            "optionName": "Bệ tỳ tay",
+                            "optionValue": "Điều chỉnh 3D"
+                        },
+                        {
+                            "optionName": "Piston",
+                            "optionValue": "Samhongsa Class4"
+                        },
+                        {
+                            "optionName": "Trọng tải tối đa",
+                            "optionValue": "150 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ghế Công Thái Học  GT Chair Dvary Butterfly ",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/dvary_2.png?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Gray",
+                    "sku": "GTCDvary01CF",
+                    "price": "16.500.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/dvary_X%C3%81M_1.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu lưng ghế",
+                            "optionValue": "Lưới Wintex"
+                        },
+                        {
+                            "optionName": "Chất liệu mâm ghế",
+                            "optionValue": "Lưới Wintex"
+                        },
+                        {
+                            "optionName": "Khung lưng",
+                            "optionValue": "Hợp kim"
+                        },
+                        {
+                            "optionName": "Chân ghế",
+                            "optionValue": "Hợp kim"
+                        },
+                        {
+                            "optionName": "Tựa đầu",
+                            "optionValue": "2D"
+                        },
+                        {
+                            "optionName": "Bệ tỳ tay",
+                            "optionValue": "2D"
+                        },
+                        {
+                            "optionName": "Piston",
+                            "optionValue": "Samhongsa Class4"
+                        },
+                        {
+                            "optionName": "Trọng tải tối đa",
+                            "optionValue": "160 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ghế Công Thái Học Herman Miller Aeron",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Herman-Miller-Aeron%208.jpeg?w=700&h=700",
+            "desc": "Ghế Aeron kết hợp giữa kiến thức uyên thâm về con người là trung tâm của thiết kế với các công nghệ hiện đại nhất. Herman Miller Aeron vẫn là một ghế làm việc mang tính biểu tượng, là thước đo cho độ thoải mái, công thái học trong hơn 20 năm sau khi phát hành.",
+            "variants": [
+                {
+                    "name": "Size B - Chân nhựa - Graphite",
+                    "sku": "HMAeron01NF",
+                    "price": "31.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Herman-Miller-Aeron%2010.jpeg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu lưng ghế",
+                            "optionValue": "Lưới"
+                        },
+                        {
+                            "optionName": "Chất liệu mâm ghế",
+                            "optionValue": "Lưới"
+                        },
+                        {
+                            "optionName": "Khung lưng",
+                            "optionValue": "Nhựa"
+                        },
+                        {
+                            "optionName": "Chân ghế",
+                            "optionValue": "Nhựa"
+                        },
+                        {
+                            "optionName": "Tựa đầu",
+                            "optionValue": "Không có"
+                        },
+                        {
+                            "optionName": "Bệ tỳ tay",
+                            "optionValue": "2D"
+                        },
+                        {
+                            "optionName": "Piston",
+                            "optionValue": "Samhongsa Class 5"
+                        },
+                        {
+                            "optionName": "Trọng tải tối đa",
+                            "optionValue": "159 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ghế công thái học Epione ErgoChair Pro ",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Herman-Miller-Aeron%208.jpeg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Cool Gray",
+                    "sku": "ErgoChairPro01CF",
+                    "price": "8.590.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/21/white.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu lưng ghế",
+                            "optionValue": "Lưới Krall&Roth"
+                        },
+                        {
+                            "optionName": "Chất liệu mâm ghế",
+                            "optionValue": "Lưới Krall&Roth"
+                        },
+                        {
+                            "optionName": "Khung lưng",
+                            "optionValue": "Nhựa"
+                        },
+                        {
+                            "optionName": "Chân ghế",
+                            "optionValue": "Kim loại"
+                        },
+                        {
+                            "optionName": "Tựa đầu",
+                            "optionValue": "3D"
+                        },
+                        {
+                            "optionName": "Bệ tỳ tay",
+                            "optionValue": "4D"
+                        },
+                        {
+                            "optionName": "Piston",
+                            "optionValue": "Samhongsa Class 4"
+                        },
+                        {
+                            "optionName": "Trọng tải tối đa",
+                            "optionValue": "150 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ghế Công Thái Học GT Chair I-see ",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/26/gtchair-I-see-1.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Gray",
+                    "sku": "GTChairIsee01CF",
+                    "price": "9.500.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/social/option-reviews/2022/3/18/1647598180_3410650e83664c381577.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu lưng ghế",
+                            "optionValue": "Lưới Wintex - Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Chất liệu mâm ghế",
+                            "optionValue": "Lưới Wintex - Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Khung lưng",
+                            "optionValue": "Kim loại & Nhựa"
+                        },
+                        {
+                            "optionName": "Chân ghế",
+                            "optionValue": "Kim loại"
+                        },
+                        {
+                            "optionName": "Tựa đầu",
+                            "optionValue": "3D"
+                        },
+                        {
+                            "optionName": "Bệ tỳ tay",
+                            "optionValue": "3D"
+                        },
+                        {
+                            "optionName": "Piston",
+                            "optionValue": "Samhongsa Class 4"
+                        },
+                        {
+                            "optionName": "Trọng tải tối đa",
+                            "optionValue": "150 kg"
+                        }
+                    ]
+                }
+            ]
+        },
+        /*Ban*/
+        {
+            "name": "Bàn thông minh Epione SmartDesk Pro (Khung bàn màu đen)",
+            "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/22/xu-0515.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Bản thường",
+                    "sku": "SmartDeskPro03CF",
+                    "price": "7.490.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/22/xu-0515.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu mặt bàn",
+                            "optionValue": "Gỗ MDF Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Chất liệu khung",
+                            "optionValue": "Thép không gỉ Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Chiều cao",
+                            "optionValue": "75cm - 125cm"
+                        },
+                        {
+                            "optionName": "Chiều rộng",
+                            "optionValue": "120cm"
+                        },
+                        {
+                            "optionName": "Chiều dài",
+                            "optionValue": "80cm"
+                        },
+                        {
+                            "optionName": "Hỗ trợ app",
+                            "optionValue": "Có"
+                        }
+                    ]
+                },
+                {
+                    "name": "Có hộp đựng",
+                    "sku": "SmartDeskPro21CF",
+                    "price": "7.990.000",
+                    "image": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/22/xu-0828.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu mặt bàn",
+                            "optionValue": "Gỗ MDF Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Chất liệu khung",
+                            "optionValue": "Thép không gỉ Hàn Quốc"
+                        },
+                        {
+                            "optionName": "Chiều cao",
+                            "optionValue": "75cm - 125cm"
+                        },
+                        {
+                            "optionName": "Chiều rộng",
+                            "optionValue": "120cm"
+                        },
+                        {
+                            "optionName": "Chiều dài",
+                            "optionValue": "80cm"
+                        },
+                        {
+                            "optionName": "Hỗ trợ app",
+                            "optionValue": "Có"
+                        }
+                    ]
+                }
+            ]
+        },
+        /*Arm*/
+        {
+            "name": "Arm màn hình Human Motion T7",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/T7-01.png?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "White",
+                    "sku": "ArmHMT701CF",
+                    "price": "1.850.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/T7-03.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu",
+                            "optionValue": "Hợp kim "
+                        },
+                        {
+                            "optionName": "Sức tải",
+                            "optionValue": "3Kg-10Kg"
+                        },
+                        {
+                            "optionName": "Ngàm hỗ trợ",
+                            "optionValue": "7.5Cm/10Cm"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arm màn hình Human Motion T2",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/T2_01.png?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Frost White",
+                    "sku": "ArmHMT2CF",
+                    "price": "1.350.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/T2_02.png?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu",
+                            "optionValue": "Hợp kim "
+                        },
+                        {
+                            "optionName": "Sức tải",
+                            "optionValue": "3Kg-8Kg"
+                        },
+                        {
+                            "optionName": "Ngàm hỗ trợ",
+                            "optionValue": "7.5Cm"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arm màn hình Epione Liftup Pro ",
+            "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/LDT20-C012U-01%20copy.jpg?w=700&h=700",
+            "desc": "",
+            "variants": [
+                {
+                    "name": "Black - Arm đơn",
+                    "sku": "LifupProCF",
+                    "price": "1.050.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/LDT20-C012U-03%20copy.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu",
+                            "optionValue": "Hợp kim nhôm"
+                        },
+                        {
+                            "optionName": "Sức tải",
+                            "optionValue": "3Kg-12Kg"
+                        },
+                        {
+                            "optionName": "Ngàm hỗ trợ",
+                            "optionValue": "7.5Cm/10Cm"
+                        }
+                    ]
+                },
+                {
+                    "name": "Space Gray - Arm đôi",
+                    "sku": "ArmLifupDouCF",
+                    "price": "1.750.000",
+                    "image": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/LDT20-C024U-01%20copy.jpg?w=700&h=700",
+                    "options": [
+                        {
+                            "optionName": "Chất liệu",
+                            "optionValue": "Hợp kim nhôm"
+                        },
+                        {
+                            "optionName": "Sức tải",
+                            "optionValue": "3Kg-12Kg"
+                        },
+                        {
+                            "optionName": "Ngàm hỗ trợ",
+                            "optionValue": "7.5Cm/10Cm"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

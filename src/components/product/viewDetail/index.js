@@ -1,58 +1,133 @@
-import React from 'react'
-import { connect,useSelector } from 'dva';
-import {  Modal, Carousel, Image, Descriptions } from 'antd';
-import styles from './styles.less'; 
-import {  LeftOutlined, RightOutlined }from '@ant-design/icons';
-const ViewDetail = ({visible, onCancel, products}) => {
-  const view = useSelector(state => state.products.productview);
+import React, { useState } from 'react';
+import { connect, useSelector } from 'dva';
+import { Modal, Image, Descriptions, Col, Row, Table, Button, Space } from 'antd';
+import styles from './styles.less';
+import ActionRender from '../variant/actionRender/index';
+import { moneyConverter, EMPTY_IMAGE } from '../../../Utils/helper';
+function isNumeric(str) {
+  if (typeof str != 'string') return false; // we only process strings!
   return (
-    <Modal 
-    className= 'cc'
-    title= {view.name} 
-    footer={null}
-    visible={visible} 
-    cancelButtonProps={{ style: { display: 'none' } }}
-    okButtonProps={{ style: { display: 'none' } }}
-    width={1000} 
-    bodyStyle={ { height: 'unset' }} 
-    onCancel={onCancel}>
-    <div className={styles.viewContainer}>
-    <div className={styles.carouContainer}>
-    <div className={styles.codeContainer}>
-        <span>ID: {view.product_id}</span> 
-        <span>Mã sản phẩm: {view.code}</span>
-    </div>
-    <Carousel 
-      autoplay
-      arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}
-    >
-        {view.images.map((item, index)  => {
-            return (
-              <div className={styles.imageContainer}>
-              <Image width={200} height={300} src={item} preview={false}/>   
-              </div>    
-            )
-        })}
-    </Carousel>
-    </div>
-    <div className={styles.inforContainer}>
-    <Descriptions title=" Thông tin sản phẩm:">
-    <Descriptions.Item label="Tên sản phẩm" span={3}> {view.name}</Descriptions.Item>
-    <Descriptions.Item label="Mô tả" span={3}>{view.description}</Descriptions.Item>
-    <Descriptions.Item label="Phân loại">{view.categories}</Descriptions.Item>
-    <Descriptions.Item label="Số lượng">{view.quantity}</Descriptions.Item>
-    <Descriptions.Item label="Kích thước">{view.size}</Descriptions.Item>
-    <Descriptions.Item label="Giá nhập">{view.orignalprice}</Descriptions.Item>
-    <Descriptions.Item label="Giá bán">{view.price}</Descriptions.Item>
-    <Descriptions.Item label="Chất liệu">{view.material}</Descriptions.Item>
-    <Descriptions.Item label="Hãng">{view.brand}</Descriptions.Item>
-  </Descriptions>
-    </div>
-    </div>
-    </Modal>
-  )
+    !isNaN(str) && !isNaN(parseFloat(str)) // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+  ); // ...and ensure strings of whitespace fail
 }
+const ViewDetail = ({ visible, onCancel,dispatch }) => {
+  var viewId = useSelector(state => state.products.viewId);
+  var view = useSelector(state => state.products.view);
+  var column = [
+    {
+      title: 'ID',
+      dataIndex: 'variantId',
+      align: 'left',
+      width: '8%',
+    },
+    {
+      title: 'Ảnh',
+      dataIndex: 'imgUrl',
+      align: 'center',
+      width: '11%',
+      render: item => {
+        console.log(item);
+        return <Image width={60} height={60} src={item != '' && item != undefined ? item : EMPTY_IMAGE}></Image>;
+      },
+    },
+    {
+      title: 'SKU',
+      dataIndex: 'sku',
+      align: 'center',
+      width: '13%',
+    },
+    {
+      title: 'Tên',
+      dataIndex: 'variantName',
+      align: 'center',
+      width: '25%',
+    },
+    // {
+    //   title: 'Giá nhập',
+    //   dataIndex: 'importPrice',
+    //   align: 'center',
+    //   width: '15%',
+    //   render: item => {
+    //     return moneyConverter(item);
+    //   },
+    // },
+    {
+      title: 'Giá bán',
+      dataIndex: 'price',
+      align: 'center',
+      width: '15%',
+      render: item => {
+        return moneyConverter(item);
+      },
+    },
+    {
+      title: 'Số lượng',
+      dataIndex: 'quantity',
+      align: 'center',
+      width: '12%',
+      render: item => {
+        return moneyConverter(item);
+      },
+    },
+    {
+      title: 'Hành động',
+      align: 'center',
+      width: '12%',
+      render: item => {
+        return <ActionRender item={item} productId={view?.productId} />;
+      },
+    },
+  ];
+  return (
+    <Modal
+      className="cc"
+      title="CHI TIẾT SẢN PHẨM"
+      footer={null}
+      visible={visible}
+      cancelButtonProps={{ style: { display: 'none' } }}
+      okButtonProps={{ style: { display: 'none' } }}
+      width={1500}
+      bodyStyle={{ height: 'unset' }}
+      onCancel={onCancel}
+    >
+      <Row className={styles.viewContainer}>
+        <Col span={24}>
+          <Descriptions>
+            <Descriptions.Item label="Mã sản phẩm" labelStyle={{fontWeight: 'bold'}}> {view?.productId}</Descriptions.Item>
+            <Descriptions.Item label="Phân loại" labelStyle={{fontWeight: 'bold'}}>
+              {view?.category?.categoryName}
+            </Descriptions.Item>
+            <Descriptions.Item label="Hãng" labelStyle={{fontWeight: 'bold'}}>{view?.brand?.brandName}</Descriptions.Item>
+            <Descriptions.Item label="Tên sản phẩm" labelStyle={{fontWeight: 'bold'}}> {view?.productName}</Descriptions.Item>
+            <Descriptions.Item label="Mô tả" labelStyle={{fontWeight: 'bold'}}>{view?.productDesc}</Descriptions.Item>
+          </Descriptions>
+        </Col>
+        <Col span={4} className={styles.carouContainer}>
+          <Image
+            className={styles.image}
+            width={220}
+            height={280}
+            src={view?.imgUrl != '' ? view?.imgUrl : EMPTY_IMAGE}
+          />
+        </Col>
+        <Col span={19} offset={1} className={styles.inforContainer}>
+          <span style={{ marginBottom: '20px' }} className={styles.subtitle}>
+            Danh sách phiên bản:
+          </span>
+          <Table
+            className={styles.tableVariant}
+            columns={column}
+            bordered
+            dataSource={view?.variants}
+            pagination={{ position: ['none', 'none'] }}
+            scroll={{ y: 400 }}
+          ></Table>
+        </Col>
+      </Row>
+    </Modal>
+  );
+};
 
-export default  connect( state => ({
-    products: state.products
-  })) (ViewDetail)
+export default connect(state => ({
+  products: state.products,
+}))(ViewDetail);

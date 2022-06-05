@@ -53,7 +53,8 @@ const EditCategory = props => {
     });
      form.setFieldsValue(formFill);
      topFunction();
-  }, [currCategory, form, state]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   var isLoading = false;
 
   const onFill = () => {

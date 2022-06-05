@@ -55,7 +55,8 @@ const EditProduct = props => {
     });
     console.log(formFill);
     form.setFieldsValue(formFill);
-  }, [editProduct.brand.brandId, editProduct.brand.brandName, editProduct.imgUrl, editProduct.productDesc, editProduct.productName, form, state]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   var isLoading = false;
   const searchResult = value => {
     let result = brands.filter(item =>

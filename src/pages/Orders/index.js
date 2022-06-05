@@ -20,7 +20,8 @@ const Orders = props => {
     dispatch({
       type: 'orders/getOrderList',
     });
-  }, [dispatch]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [state, setState] = useState({
     searchText: '',
     searchedColumn: '',

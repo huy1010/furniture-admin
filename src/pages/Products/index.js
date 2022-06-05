@@ -17,7 +17,8 @@ const Product = props => {
     dispatch({
       type: 'products/getProductList',
     });
-  }, [dispatch]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const isLoading = loading.effects['products/getProductList'];
   const products = useSelector(state => state.products.products);
 

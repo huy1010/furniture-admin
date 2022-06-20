@@ -29,7 +29,7 @@ const Voucher = props => {
       sorter: (a, b) => parseInt(a.voucherId) - parseInt(b.voucherId),
     },
     {
-      title: 'Mã',
+      title: 'Mã CODE',
       dataIndex: 'voucherName',
       align: 'center',
       width: '13%',
@@ -53,22 +53,21 @@ const Voucher = props => {
       },
     },
     {
-      title: 'Giá trị',
+      title: 'Phần trăm khuyến mãi',
       dataIndex: 'voucherValue',
       align: 'center',
-      width: '15%',
-      sorter: (a, b) => parseInt(a.voucherValue) - parseInt(b.voucherValue),
+      width: '10%',
       render: item => {
-        return moneyConverter(item) + 'đ';
+        return moneyConverter(item) + '%';
       },
     },
     {
-      title: 'Hóa đơn tối thiểu',
+      title: 'Giá trị tối đa',
       dataIndex: 'cappedAt',
       align: 'center',
       width: '15%',
       render: item => {
-        return moneyConverter(item) + 'đ';
+        return moneyConverter(item) + ' đ';
       },
     },
     {
@@ -76,7 +75,6 @@ const Voucher = props => {
       dataIndex: 'amount',
       align: 'center',
       width: '10%',
-      sorter: (a, b) => parseInt(a.amount) - parseInt(b.amount),
     },
     {
       title: 'Mô tả',

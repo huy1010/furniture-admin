@@ -13,12 +13,29 @@ const CusActionRender = ({ dispatch, item }) => {
     });
   }
   function onChange(checked) {
-    console.log(`switch to ${checked}`);
+    if(checked) {
+      let payload = {};
+      payload.flag = 'B';
+      payload.username = item.username;
+      dispatch({
+        type: 'user/lockAccount',
+        payload: payload,
+      });
+    }
+    else {
+      let payload = {};
+      payload.flag = 'Y';
+      payload.username = item.username;
+      dispatch({
+        type: 'user/lockAccount',
+        payload: payload,
+      });
+    }
   }
   return (
     <Space size="middle">
       <Tooltip title="Vô hiệu hóa">
-      <Switch defaultChecked={item.activeFlag == "N" ? true : false} onChange={onChange} />
+      <Switch defaultChecked={item.activeFlag == "B" ? true : false} onChange={onChange} />
       </Tooltip>
     </Space>
   );

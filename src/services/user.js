@@ -11,4 +11,14 @@ export function addUser(payload) {
     body: JSON.stringify(payload),
   });
 }
-
+export function delAccount(payload) {
+  return request(`/api/users/${payload}`, {
+    method: 'DELETE',
+  });
+}
+export function blockAccount(payload) {
+  return request(`/api/users/block-user`, {
+    method: 'POST',
+    body: JSON.stringify(payload)
+  });
+}

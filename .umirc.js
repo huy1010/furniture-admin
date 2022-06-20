@@ -102,7 +102,7 @@ export default {
         },
         {
           path: '/',
-          component: './Dashboard/index',
+          component: './Products/index',
         },
       ],
     },

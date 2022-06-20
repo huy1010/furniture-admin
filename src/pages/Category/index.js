@@ -154,16 +154,10 @@ const Category = props => {
       ...getColumnSearchProps('categoryName'),
     },
     {
-      title: 'Mô tả',
-      dataIndex: 'categoryDesc',
-      align: 'center',
-      width: '15%',
-    },
-    {
       title: 'Các thuộc tính',
       dataIndex: 'attributes',
       align: 'center',
-      width: '15%',
+      width: '30%',
       render: tags => (
         <>
           {tags.map(tag => {
@@ -179,9 +173,15 @@ const Category = props => {
       ),
     },
     {
+      title: 'Mô tả',
+      dataIndex: 'categoryDesc',
+      align: 'center',
+      width: '10%',
+    },
+    {
       title: 'Hành Động',
       align: 'center',
-      width: '15%',
+      width: '5%',
       render: item => {
         return <ActionRender item={item} />;
       },
@@ -214,6 +214,7 @@ const Category = props => {
               columns={columns}
               bordered
               dataSource={categories}
+              rowKey = "categoryId"
             ></Table>
             <Button
               onClick={() => topFunction()}

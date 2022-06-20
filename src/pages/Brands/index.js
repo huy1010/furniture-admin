@@ -199,6 +199,7 @@ const Brand = props => {
           columns={columns}
           bordered
           dataSource={brands}
+          rowKey="brandId"
         ></Table>
       </Content>
     </Layout>

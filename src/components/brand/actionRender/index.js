@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import styles from './styles.less';
 import { Space, Tooltip, Button, Modal } from 'antd';
 import { EditOutlined, EyeOutlined, DeleteOutlined } from '@ant-design/icons';
-import { router } from 'umi';
 import EditBrand from '../edit/index';
 const ActionRender = props => {
   const { dispatch, brand } = props;
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [editBrand, setEditBrand] = useState(brand);
+  React.useEffect(() => {
+    setEditBrand(brand);
+  },[brand]);
   const handleClickDelete = async () => {
     Modal.confirm({
       title: 'Bạn chắc chắn muốn xóa?',
@@ -28,7 +31,7 @@ const ActionRender = props => {
         dispatch={dispatch}
         onCancel={handleCancel}
         visible={isModalVisible}
-        brand={brand}
+        brand={editBrand}
       />
       <Space size="middle">
         <Tooltip title="Sửa">

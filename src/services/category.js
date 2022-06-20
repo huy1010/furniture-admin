@@ -1,6 +1,6 @@
 import { request } from '../Utils/request';
 export async function getCategoryList() {
-  return await request(`/api?onlyActive=true`);
+  return await request(`/api/categories?onlyActive=true`);
 }
 export async function getAttributeList() {
   return await request(`/api/attributes`);

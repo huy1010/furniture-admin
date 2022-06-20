@@ -11,20 +11,7 @@ import {connect} from 'dva';
 const ActionRender = ({voucher,dispatch}) => {
   return (
     <Space size="middle">
-      <Tooltip title ="Sửa">
-        <Button className={styles.buttonContainer}
-           onClick = {()=>{
-            router.push({
-              pathname: '/voucher/edit',
-              query: {
-                voucher: JSON.stringify(voucher)
-              }
-            });
-          }}
-        >
-          <EditOutlined />
-        </Button>
-      </Tooltip>
+
       <Tooltip title ="Xóa" > 
         <Button className={styles.buttonContainer}
           onClick = {()=>{

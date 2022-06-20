@@ -260,8 +260,9 @@ const CreateProduct = props => {
         payload: state.newProduct,
       });
       console.log(state.newProduct);
+     // router.goBack();
     }
-   router.goBack();
+   
   };
   return (
     <div>

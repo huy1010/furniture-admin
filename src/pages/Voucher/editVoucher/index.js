@@ -8,15 +8,15 @@ import moment from 'moment';
 const { TextArea } = Input;
 const { RangePicker } = DatePicker;
 
-const rangeConfig = {
-  rules: [
-    {
-      type: 'array',
-      required: true,
-      message: 'Please select time!',
-    },
-  ],
-};
+// const rangeConfig = {
+//   rules: [
+//     {
+//       type: 'array',
+//       required: true,
+//       message: 'Please select time!',
+//     },
+//   ],
+// };
 
 // -- //
 
@@ -37,26 +37,27 @@ const EditVoucher = props => {
   const voucherTemp = JSON.parse(props.location.query.voucher);
   const [newVoucher, setNewVoucher] = useState(voucherTemp);
   const { dispatch } = props;
+  const dateFormat = 'YYYY-MM-DD';
   const [form] = Form.useForm();
   React.useEffect(() => {}, []);
 
   const validFields = voucher => {
     const tomorow = moment(moment().add(1, 'days'));
-    const validDate = voucher.range_picker[0];
-
-    if (validDate.format('YYYYMMDD') < tomorow.format('YYYYMMDD')) {
-      message.error(`Ngày áp dụng phải bắt đầu từ hôm sau (` + tomorow.format('DD-MM-YYYY') + `)`);
-      return false;
-    }
+    //const validDate = voucher.range_picker[0];
     let values = form.getFieldValue();
-    if (values.cappedAt <= values.voucherValue) {
-      message.error(`Giá trị tối thiểu phải lớn hơn giá trị của khuyến mãi.`);
-      return false;
-    }
+   
     return true;
   };
 
   const onFinish = async values => {
+    if(newVoucher?.validDate == undefined) {
+      newVoucher.validDate = voucherTemp.validDate;
+      setNewVoucher(newVoucher);
+    }
+    if(newVoucher?.expirationDate == undefined) {
+      newVoucher.expirationDate = voucherTemp.expirationDate;
+      setNewVoucher(newVoucher);
+    }
     //console.log(newVoucher);
     if (validFields(newVoucher)) {
       dispatch({
@@ -114,9 +115,12 @@ const EditVoucher = props => {
             name="range_picker"
             label="THỜI GIAN ÁP DỤNG"
             className={styles.formItems}
-            {...rangeConfig}
+            // {...rangeConfig}
           >
-            <RangePicker className={styles.inputItems} />
+            <RangePicker className={styles.inputItems} 
+             defaultValue={[moment(voucherTemp.validDate.substring(0,10), dateFormat), moment(voucherTemp.expirationDate.substring(0,10), dateFormat)]}
+             format={dateFormat}
+             />
           </Form.Item>
         </Col>
         <Col span={24}>

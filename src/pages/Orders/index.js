@@ -117,10 +117,14 @@ const Orders = props => {
     },
     {
       title: 'Tên Khách hàng',
-      dataIndex: 'username',
       align: 'center',
       width: '15%',
-      ...getColumnSearchProps('username'),
+      render: text => {
+        if (text.recipientName != null) return text.recipientName;
+        else
+         return text.username;
+      },
+      //...getColumnSearchProps('username'),
     },
     {
       title: 'Ngày đặt hàng',

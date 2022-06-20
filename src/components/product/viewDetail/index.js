@@ -42,15 +42,15 @@ const ViewDetail = ({ visible, onCancel,dispatch }) => {
       align: 'center',
       width: '25%',
     },
-    // {
-    //   title: 'Giá nhập',
-    //   dataIndex: 'importPrice',
-    //   align: 'center',
-    //   width: '15%',
-    //   render: item => {
-    //     return moneyConverter(item);
-    //   },
-    // },
+    {
+      title: 'Giá nhập',
+      dataIndex: 'importPrice',
+      align: 'center',
+      width: '15%',
+      render: item => {
+        return moneyConverter(item);
+      },
+    },
     {
       title: 'Giá bán',
       dataIndex: 'price',
@@ -121,6 +121,7 @@ const ViewDetail = ({ visible, onCancel,dispatch }) => {
             dataSource={view?.variants}
             pagination={{ position: ['none', 'none'] }}
             scroll={{ y: 400 }}
+            rowKey='variantId'
           ></Table>
         </Col>
       </Row>

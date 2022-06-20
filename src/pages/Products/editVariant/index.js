@@ -62,7 +62,8 @@ const EditVariant = props => {
     });
     form.setFieldsValue(formFill);
     topFunction();
-  }, [editVariant.attributes, editVariant.imgUrl, editVariant.price, editVariant.quantity, editVariant.variantName, form, state]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const setImageVariant = async file => {
     uploading = true;
     let url = await uploader(file.file.originFileObj);

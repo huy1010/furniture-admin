@@ -67,11 +67,11 @@ const Model = {
       // `item` is an object which contains the original value
       // as well as the time when it's supposed to expire
       const item = {
-        value: payload.content,
+        value: payload.content.accessToken,
         expiry: now.getTime() + 86400 * 1000,
       };
       localStorage.setItem('token', JSON.stringify(item));
-      localStorage.setItem('roles', JSON.stringify(payload.auth));
+      localStorage.setItem('roles', [payload.content.role]);
       //console.log(`login, ${payload.data.auth}`);
       return { ...state };
     },

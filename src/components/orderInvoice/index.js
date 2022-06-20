@@ -21,7 +21,7 @@ const Invoice = forwardRef((props, ref) => {
       width: '20%',
     },
     {
-      title: 'Giá nhập',
+      title: 'Giá ',
       dataIndex: 'price',
       align: 'center',
       width: '10%',
@@ -56,6 +56,7 @@ const Invoice = forwardRef((props, ref) => {
           <div>
             <p>Mã hóa đơn: {props.data.location.state.orderID}</p>
             <p>Người đặt: {props.data.location.state.username}</p>
+            <p>Địa chỉ: {props.data.location.state.address}</p>
             <p>Người xuất hóa đơn: {props.data.location.state.emailExport}</p>
           </div>
           <div></div>

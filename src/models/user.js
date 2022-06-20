@@ -1,4 +1,4 @@
-import { getCustomers, getStaffs,addUser } from '../services/user';
+import { getCustomers, getStaffs, addUser, delAccount, blockAccount } from '../services/user';
 import { notification } from 'antd';
 export default {
   namespace: 'user',
@@ -8,12 +8,12 @@ export default {
   },
   effects: {
     *getUsers(action, { put, call }) {
-        yield put({
-            type: 'getCustomers'
-        })
-        yield put({
-            type: 'getStaffs'
-        })
+      yield put({
+        type: 'getCustomers',
+      });
+      yield put({
+        type: 'getStaffs',
+      });
     },
     *getCustomers(action, { put, call }) {
       const response = yield call(getCustomers);
@@ -28,25 +28,51 @@ export default {
     *getStaffs(action, { put, call }) {
       const response = yield call(getStaffs);
       if (response.status === 200) {
+        let staff = response.content.filter(user => user.role.roleId !== 1);
         yield put({
           type: 'saveStaffs',
-          payload: response.content,
+          payload: staff,
         });
       }
     },
-    *createUser(action, {put, call}) {
+    *createUser(action, { put, call }) {
       const response = yield call(addUser, action.payload);
       console.log(response);
-      if (response.status === 200) {
+      if (response.status === 201) {
         notification.success({
-          message: 'Create success'
-        })
+          message: 'Create success',
+        });
       } else {
         notification.error({
-          message: response.errors
-        })
+          message: response.errors,
+        });
       }
-    }
+    },
+    *delUser(action, { put, call }) {
+      const response = yield call(delAccount, action.payload);
+      if (response.status === 200) {
+        yield put({ type: 'delete', payload: action.payload });
+        notification.success({
+          message: 'Delete success',
+        });
+      } else {
+        notification.error({
+          message: response.errors,
+        });
+      }
+    },
+    *lockAccount(action, { put, call }) {
+      const response = yield call(blockAccount, action.payload);
+      if (response.status === 200) {
+        notification.success({
+          message: 'Update success',
+        });
+      } else {
+        notification.error({
+          message: response.errors,
+        });
+      }
+    },
   },
   reducers: {
     saveCustomers(state, action) {
@@ -60,6 +86,10 @@ export default {
         ...state,
         staffs: action.payload,
       };
+    },
+    delete(state, action) {
+      console.log(action.payload);
+      return { ...state, staffs: state.staffs.filter(user => user.username != action.payload) };
     },
   },
 };

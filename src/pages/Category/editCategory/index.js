@@ -82,8 +82,8 @@ const EditCategory = props => {
       newCate['categoryId'] = currCategory.categoryId;
       newCate['categoryName'] = values.name;
       newCate['categoryDesc'] = values.description;
+      newCate['imgUrl'] = state.imgUrl;
       isLoading =  loading.effects[('category/editCategory')];
-      console.log(newCate);
       dispatch({
         type: 'category/editCategory',
         payload: newCate,

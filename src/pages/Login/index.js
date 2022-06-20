@@ -64,12 +64,12 @@ const Login = props => {
                 </Form>
              </Col>
              <Col className={styles.colContainerRight}>
-                 <div className={styles.sologanContainer}>
-                    <p className={styles.sologan}>"Chúng tôi luôn mong muốn mang đến cho bạn một ngôi nhà sang trọng và đẳng cấp  nhất trong từng chi tiết".</p>
-                    <p className={styles.name}>Mr. Hướng</p>
+                 {/* <div className={styles.sologanContainer}>
+                    <p className={styles.sologan}>"".</p>
+                    <p className={styles.name}>Mr. Huy</p>
                     <p className={styles.decs}>Founder</p>
-                    <p className={styles.decs}>Furniture Shop</p>
-                 </div>
+                    <p className={styles.decs}>Gear Shop</p>
+                 </div> */}
              </Col>
          </Row>
     </div>

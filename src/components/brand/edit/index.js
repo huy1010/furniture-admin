@@ -19,13 +19,15 @@ const EditBrand = props => {
        imgUrl: brand.imgUrl
      })
   // eslint-disable-next-line no-use-before-define
-  },[brand, onFill, state]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
   const clear = () => {
     setState({
       ...state,
       imgUrl: brand.imgUrl,
     });
   };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onFill = () => {
     var formFill = {};
     formFill['brandName'] = brand.brandName;

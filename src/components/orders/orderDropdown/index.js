@@ -11,7 +11,9 @@ import {
 
 const OrderRender = ({ text,dispatch }) => {
   const [status, setStatus] = useState(text.orderStatus);
-  
+  React.useEffect(()=> {
+    setStatus(text.orderStatus);
+  },[text.orderStatus]);
   const updateStatus = (value) => {
     let request = {};
     request.orderId = text.orderId;

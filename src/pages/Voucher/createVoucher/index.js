@@ -135,7 +135,7 @@ const CreateVoucher = props => {
         <Col span={24}>
         <Form.Item 
             name='voucherValue'
-            label="GIÁ TRỊ" 
+            label="PHẦN TRĂM" 
             className={styles.formItems}
             rules={[
                 {
@@ -146,6 +146,11 @@ const CreateVoucher = props => {
                   type:"number",
                   min: 1,
                   message: "Giá trị phải lớn hơn 0",
+                },
+                {
+                  type:"number",
+                  max: 100,
+                  message: "Giá trị phải nhỏ hơn hoặc bằng 100",
                 }
               ]}
         >
@@ -175,17 +180,17 @@ const CreateVoucher = props => {
         <Col span={24}>
         <Form.Item 
             name='cappedAt'
-            label="HÓA ĐƠN TỐI THIỂU" 
+            label="GIÁ TRỊ TỐI ĐA" 
             className={styles.formItems}
             rules={[
                 {
                   required: true,
-                  message: 'Vui lòng chọn giá tiền hóa đơn tối thiểu để áp dụng khuyễn mãi!',
+                  message: 'Vui lòng nhập giá trị tối đa khuyễn mãi!',
                 },
                 {
                   type:"number",
                   min: 1,
-                  message: "Hóa đơn phải lớn hơn 0",
+                  message: "giá trị tối đa phải lớn hơn 0",
                 }
               ]}
         >

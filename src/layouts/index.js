@@ -20,6 +20,9 @@ import { connect } from 'dva';
 const { Sider, Content } = Layout;
 function BasicLayout(props) {
   const { children, dispatch } = props;
+  let roles = localStorage.getItem('roles');
+  roles = typeof roles === 'string' ? [roles] : roles;
+  const isAdmin = roles.indexOf('ADMIN') !== -1;
   React.useEffect(() => {
     dispatch({
       type: 'category/getCategoryList',
@@ -54,22 +57,6 @@ function BasicLayout(props) {
             ></Menu.Item>
             <Menu.Item
               className={styles.menuItems}
-              key="2"
-              icon={<HomeOutlined className={styles.menuIcons} />}
-              onClick={() => router.push('/dashboard')}
-            >
-              <span className={styles.menuTitle}>Tổng Quan</span>
-            </Menu.Item>
-            <Menu.Item
-              className={styles.menuItems}
-              key="3"
-              icon={<InboxOutlined className={styles.menuIcons} />}
-              onClick={() => router.push('/products')}
-            >
-              <span className={styles.menuTitle}>Sản Phẩm</span>
-            </Menu.Item>
-            <Menu.Item
-              className={styles.menuItems}
               key="4"
               icon={<FileDoneOutlined className={styles.menuIcons} />}
               onClick={() => router.push('/category')}
@@ -83,6 +70,14 @@ function BasicLayout(props) {
               onClick={() => router.push('/brands')}
             >
               <span className={styles.menuTitle}>Thương Hiệu</span>
+            </Menu.Item>
+            <Menu.Item
+              className={styles.menuItems}
+              key="3"
+              icon={<InboxOutlined className={styles.menuIcons} />}
+              onClick={() => router.push('/products')}
+            >
+              <span className={styles.menuTitle}>Sản Phẩm</span>
             </Menu.Item>
             <Menu.Item
               className={styles.menuItems}
@@ -106,8 +101,9 @@ function BasicLayout(props) {
               icon={<TagsOutlined className={styles.menuIcons} />}
               onClick={() => router.push('/vouchers')}
             >
-              <span className={styles.menuTitle}>Khuyến Mại</span>
+              <span className={styles.menuTitle}>Khuyến Mãi</span>
             </Menu.Item>
+            {isAdmin && (
             <Menu.Item
               className={styles.menuItems}
               key="9"
@@ -116,6 +112,8 @@ function BasicLayout(props) {
             >
               <span className={styles.menuTitle}>Tài khoản</span>
             </Menu.Item>
+            )}
+             {isAdmin && (
             <Menu.Item
               className={styles.menuItems}
               key="10"
@@ -124,6 +122,7 @@ function BasicLayout(props) {
             >
               <span className={styles.menuTitle}>Báo Cáo</span>
             </Menu.Item>
+             )}
           </Menu>
         </Sider>
       </Affix>

@@ -52,7 +52,7 @@ export default {
           payload: action.payload,
         });
       } else {
-        notification.error({ message: response.content });
+        notification.error({ message: response.errors });
       }
     },
     *addCategory(action, { put, call }) {

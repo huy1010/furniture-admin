@@ -217,6 +217,7 @@ const Product = props => {
               columns={columns}
               bordered
               dataSource={products}
+              rowKey='productId'
             ></Table>
             <Button
               onClick={() => topFunction()}

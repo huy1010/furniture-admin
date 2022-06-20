@@ -3,7 +3,7 @@ import { connect, useSelector } from 'dva';
 import { Modal, Image, Descriptions, Col, Row, Table, Button, Space } from 'antd';
 import styles from './styles.less';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-import { moneyConverter, modifyString, toDate } from '../../../Utils/helper';
+import { moneyConverter, getAddress, toDate } from '../../../Utils/helper';
 import { router } from 'umi';
 function isNumeric(str) {
   if (typeof str != 'string') return false; // we only process strings!
@@ -15,7 +15,8 @@ const pdfpreview = props => {
   console.log(props);
   router.push('/orders/invoice/', {
     orderID: props.view.orderId,
-    username: props.view.username,
+    username: props.view.recipientName,
+    address: getAddress(props.view.deliveryAddress),
     createdAt: props.view.createdAt,
     orderStatus: props.view.orderStatus,
     paymentStatus: props.view.paymentStatus,
@@ -27,6 +28,10 @@ const pdfpreview = props => {
 const ViewDetail = ({ visible, onCancel }) => {
   const profile = useSelector(state => state.profile.account);
   const view = useSelector(state => state.orders.orderDetail);
+  // const [address,setAddress] = useState('cc');
+  // React.useEffect(() => {
+  //   setTimeout(() => setAddress(getAddress(view.deliveryAddress)),200);
+  // },[view]);
   var column = [
     {
       title: 'Ảnh',
@@ -88,7 +93,7 @@ const ViewDetail = ({ visible, onCancel }) => {
       <Row className={styles.viewContainer}>
         <Col span={20}>
           <Descriptions>
-            <Descriptions.Item label="Người đặt" labelStyle={{fontWeight: 'bold'}}> {view?.username}</Descriptions.Item>
+            <Descriptions.Item label="Người đặt" labelStyle={{fontWeight: 'bold'}}> {view?.recipientName}</Descriptions.Item>
             <Descriptions.Item label="Ngày đặt" labelStyle={{fontWeight: 'bold'}}>
               {view?.createdAt != undefined ? toDate(view?.createdAt) : ''}
             </Descriptions.Item>
@@ -96,6 +101,9 @@ const ViewDetail = ({ visible, onCancel }) => {
             <Descriptions.Item label="Trạng thái đơn hàng" labelStyle={{fontWeight: 'bold'}}> {view?.orderStatus}</Descriptions.Item>
             <Descriptions.Item label="Tình trạng thanh toán" labelStyle={{fontWeight: 'bold'}}>
               {view?.paymentStatus}
+            </Descriptions.Item>
+            <Descriptions.Item label="Địa chỉ" labelStyle={{fontWeight: 'bold'}}>
+              {view?.deliveryAddress !== undefined ? getAddress(view?.deliveryAddress) : ''}
             </Descriptions.Item>
           </Descriptions>
         </Col>

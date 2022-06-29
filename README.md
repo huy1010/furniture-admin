@@ -1,1 +1,1 @@
-# gearshop-admin
+# furniture-admin

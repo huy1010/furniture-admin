@@ -1,1 +1,2 @@
-# furniture-admin
+# Gear-admin
+React Js, Antd

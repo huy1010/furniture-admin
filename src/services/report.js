@@ -1,25 +1,28 @@
 import { request } from '../Utils/request';
-
+import { IMPORT_SERVICE, ORDER_SERVICE } from '../Utils/constants';
 export async function getBillRevenueReport(payload) {
   return await request(
-    `/api/report/orders?compression=day&end=` + payload.end + `&start=` + payload.start,
+    `${ORDER_SERVICE}/orders/report?compression=day&end=` + payload.end + `&start=` + payload.start,
   );
 }
 
 export async function getImporterReport(payload) {
   return await request(
-    `/api/report/import?compression=day&end=` + payload.end + `&start=` + payload.start,
+    `${IMPORT_SERVICE}/imports/report?compression=day&end=` +
+      payload.end +
+      `&start=` +
+      payload.start,
   );
 }
 
 export async function getBestSeller() {
-  return await request(`/api/report/orders/best-seller`);
+  return await request(`${ORDER_SERVICE}/orders/best-seller`);
 }
 
 export async function getRevenue() {
-  return await request(`/api/report/orders/revenue`);
+  return await request(`${ORDER_SERVICE}/orders/revenue`);
 }
 
 export async function getTotalCost() {
-  return await request(`/api/report/import/total-cost`);
+  return await request(`${IMPORT_SERVICE}/imports/total-cost`);
 }

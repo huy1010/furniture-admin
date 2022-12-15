@@ -7,22 +7,23 @@ import {
   ODER_SHIPPING,
   ODER_COMPLETED,
   ODER_CANCELED,
-} from '../../../Utils/contants';
+} from '../../../Utils/constants';
 
-const OrderRender = ({ text,dispatch }) => {
+const OrderRender = ({ text, dispatch }) => {
   const [status, setStatus] = useState(text.orderStatus);
-  React.useEffect(()=> {
+  React.useEffect(() => {
     setStatus(text.orderStatus);
-  },[text.orderStatus]);
-  const updateStatus = (value) => {
+  }, [text.orderStatus]);
+  const updateStatus = value => {
     let request = {};
     request.orderId = text.orderId;
     request.orderStatus = value;
     request.paymentStatus = text.paymentStatus;
-  dispatch({
-    type:'orders/updateStatus',
-    payload: request
-  })}
+    dispatch({
+      type: 'orders/updateStatus',
+      payload: request,
+    });
+  };
 
   const confirm = () => {
     Modal.confirm({
@@ -34,25 +35,25 @@ const OrderRender = ({ text,dispatch }) => {
       onOk: () => {
         setStatus(ODER_CANCELED);
         updateStatus(ODER_CANCELED);
-      }
+      },
     });
   };
 
   const handleMenuClick = e => {
-    if (e.key === "1") {
+    if (e.key === '1') {
       setStatus(ODER_PENDING);
       updateStatus(ODER_PENDING);
     }
-    if (e.key === "2") {
+    if (e.key === '2') {
       setStatus(ODER_SHIPPING);
       updateStatus(ODER_SHIPPING);
     }
-    if (e.key === "3") {
+    if (e.key === '3') {
       setStatus(ODER_COMPLETED);
       updateStatus(ODER_COMPLETED);
     }
-    if (e.key === "4") {
-        confirm()
+    if (e.key === '4') {
+      confirm();
     }
   };
   const menu = (

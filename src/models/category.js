@@ -1,4 +1,10 @@
-import { getCategoryList, addCategory, editCategory, delCategory,getAttributeList } from '../services/category';
+import {
+  getCategoryList,
+  addCategory,
+  editCategory,
+  delCategory,
+  getAttributeList,
+} from '../services/category';
 import { notification } from 'antd';
 
 export default {
@@ -8,25 +14,25 @@ export default {
     editCategory: {},
     attributes: [
       {
-        "attributeId": 1,
-        "attributeName": "Vi xử lý(CPU)",
-        "attributeIcon": "mdi-focus-field"
+        attributeId: 1,
+        attributeName: 'Vi xử lý(CPU)',
+        attributeIcon: 'mdi-focus-field',
       },
       {
-        "attributeId": 2,
-        "attributeName": "RAM",
-        "attributeIcon": "mdi-focus-field-horizontal"
+        attributeId: 2,
+        attributeName: 'RAM',
+        attributeIcon: 'mdi-focus-field-horizontal',
       },
       {
-        "attributeId": 3,
-        "attributeName": "Màn hình",
-        "attributeIcon": "mdi-laptop"
+        attributeId: 3,
+        attributeName: 'Màn hình',
+        attributeIcon: 'mdi-laptop',
       },
       {
-        "attributeId": 4,
-        "attributeName": "Card đồ họa (GPU)",
-        "attributeIcon": "mdi-apps-box"
-      }
+        attributeId: 4,
+        attributeName: 'Card đồ họa (GPU)',
+        attributeIcon: 'mdi-apps-box',
+      },
     ],
   },
   effects: {
@@ -59,7 +65,6 @@ export default {
       const response = yield call(addCategory, action.payload);
 
       if (response.status === 200) {
-        
       } else {
         notification.error({ message: response.errors });
       }
@@ -67,7 +72,7 @@ export default {
     *editCategory(action, { put, call }) {
       const response = yield call(editCategory, action.payload);
       if (response.status === 200) {
-       
+        notification.success({ message: 'Update success' });
       } else {
         notification.error({ message: response.errors });
       }
@@ -81,19 +86,18 @@ export default {
       };
     },
     saveAttributeList(state, action) {
-     
       return {
         ...state,
         attributes: action.payload,
       };
     },
-    delCate(state,{payload}) {
+    delCate(state, { payload }) {
       const previousState = state.categories;
       var newState = previousState.filter(cate => cate.categoryId !== payload);
-      return{
+      return {
         ...state,
-        categories: newState
-      }
+        categories: newState,
+      };
     },
     setEdit(state, action) {
       return {

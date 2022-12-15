@@ -16,14 +16,14 @@ const Import = props => {
     dispatch({
       type: 'imports/getImports',
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const isLoading = loading.effects['imports/getImports'];
   const imports = useSelector(state => state.imports.imports);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [importDetails, setImportDetails] = useState([]);
-  
-  // Handle search 
+
+  // Handle search
   const [state, setState] = useState({
     searchText: '',
     searchedColumn: '',
@@ -117,10 +117,11 @@ const Import = props => {
     },
     {
       title: 'Người Nhập',
-      dataIndex: 'emailImporter',
+      dataIndex: ['user', 'firstName'],
       align: 'center',
       width: '10%',
-      ...getColumnSearchProps('emailImporter'),
+      //render: text => text.firstName,
+      //...getColumnSearchProps(['user', 'firstName']),
     },
     {
       title: 'Ngày nhập',
@@ -189,6 +190,7 @@ const Import = props => {
             columns={columns}
             bordered
             dataSource={imports}
+            rowKey="importId"
           ></Table>
         </Content>
         <ViewImportDetail

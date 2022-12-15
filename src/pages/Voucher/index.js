@@ -18,7 +18,7 @@ const Voucher = props => {
     dispatch({
       type: 'voucher/getVoucherList',
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const columns = [
     {
@@ -33,7 +33,7 @@ const Voucher = props => {
       dataIndex: 'voucherName',
       align: 'center',
       width: '13%',
-    }, 
+    },
     {
       title: 'Ngày áp dụng',
       dataIndex: 'validDate',
@@ -114,6 +114,7 @@ const Voucher = props => {
             columns={columns}
             bordered
             dataSource={vouchers}
+            rowKey="voucherId"
           ></Table>
         </Content>
       </Spin>

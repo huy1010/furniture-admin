@@ -10,6 +10,7 @@ import {
 } from '../services/product';
 import { uploader } from '../Utils/uploader';
 import { notification } from 'antd';
+import { router } from 'umi';
 import { NotificationOutlined } from '@ant-design/icons';
 export default {
   namespace: 'products',
@@ -54,7 +55,7 @@ export default {
   effects: {
     *getProductList(action, { put, call }) {
       const response = yield call(getDataProduct);
-  
+
       if (response.status === 200) {
         yield put({
           type: 'saveProductList',
@@ -67,11 +68,14 @@ export default {
       if (response.status === 200) {
         for (var element of action.payload.variants) {
           element['productId'] = response.content.productId;
-    
+
           const respon = yield call(addVariant, element);
           if (respon.status !== 201) {
             notification.error({ message: respon.errors });
             break;
+          } else {
+            router.goBack();
+            notification.success({ message: 'Add product success!' });
           }
         }
       } else {
@@ -119,8 +123,6 @@ export default {
       }
     },
     *setViewDetail({ payload }, { put, call }) {
-
-
       const response = yield call(getProductDetail, payload);
       if (response.status === 200) {
         yield put({
@@ -132,7 +134,6 @@ export default {
   },
   reducers: {
     deleteProduct(state, action) {
-
       const product = state.products.filter(item => item.productId !== action.payload);
       return {
         ...state,

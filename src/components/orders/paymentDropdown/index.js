@@ -3,27 +3,28 @@ import { Menu, Dropdown, Space, Button, Modal } from 'antd';
 import { ExclamationCircleOutlined, DownOutlined } from '@ant-design/icons';
 import styles from './styles.less';
 import {
-    PAYMENT_UNPAID,
-    PAYMENT_PAID,
-    PAYMENT_REFUND,
-    PAYMENT_CANCELED,
-} from '../../../Utils/contants';
+  PAYMENT_UNPAID,
+  PAYMENT_PAID,
+  PAYMENT_REFUND,
+  PAYMENT_CANCELED,
+} from '../../../Utils/constants';
 
-const PaymentRender = ({ text,dispatch }) => {
+const PaymentRender = ({ text, dispatch }) => {
   const [status, setStatus] = useState(text.paymentStatus);
-  
-  React.useEffect(()=> {
+
+  React.useEffect(() => {
     setStatus(text.paymentStatus);
-  },[text.paymentStatus]);
-  const updateStatus = (value) => {
+  }, [text.paymentStatus]);
+  const updateStatus = value => {
     let request = {};
     request.orderId = text.orderId;
     request.orderStatus = text.orderStatus;
     request.paymentStatus = value;
-  dispatch({
-    type:'orders/updateStatus',
-    payload: request
-  })}
+    dispatch({
+      type: 'orders/updateStatus',
+      payload: request,
+    });
+  };
 
   const confirm = () => {
     Modal.confirm({
@@ -35,25 +36,25 @@ const PaymentRender = ({ text,dispatch }) => {
       onOk: () => {
         setStatus(PAYMENT_CANCELED);
         updateStatus(PAYMENT_CANCELED);
-      }
+      },
     });
   };
-  
+
   const handleMenuClick = e => {
-    if (e.key === "1") {
+    if (e.key === '1') {
       setStatus(PAYMENT_UNPAID);
       updateStatus(PAYMENT_UNPAID);
     }
-    if (e.key === "2") {
+    if (e.key === '2') {
       setStatus(PAYMENT_PAID);
       updateStatus(PAYMENT_PAID);
     }
-    if (e.key === "3") {
+    if (e.key === '3') {
       setStatus(PAYMENT_REFUND);
       updateStatus(PAYMENT_REFUND);
     }
-    if (e.key === "4") {
-        confirm();
+    if (e.key === '4') {
+      confirm();
     }
   };
   const menu = (

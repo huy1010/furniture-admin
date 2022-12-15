@@ -11,11 +11,11 @@ const Model = {
       const response = yield call(accountLogin, payload);
       if (response.status === 200) {
         yield put({
-          type: 'profile/getProfile'
-        })
+          type: 'profile/getProfile',
+        });
         yield put({
           type: 'changeLoginStatus',
-          payload: response,
+          payload: response.content,
         });
         const urlParams = new URL(window.location.href);
         const params = getPageQuery();
@@ -47,7 +47,7 @@ const Model = {
     },
     logout() {
       localStorage.removeItem('token');
-      localStorage.removeItem('roles');
+      localStorage.removeItem('role');
 
       if (window.location.pathname !== '/login') {
         router.replace({
@@ -67,11 +67,11 @@ const Model = {
       // `item` is an object which contains the original value
       // as well as the time when it's supposed to expire
       const item = {
-        value: payload.content.accessToken,
+        value: payload.accessToken,
         expiry: now.getTime() + 86400 * 1000,
       };
       localStorage.setItem('token', JSON.stringify(item));
-      localStorage.setItem('roles', [payload.content.role]);
+      localStorage.setItem('role', payload.role);
       //console.log(`login, ${payload.data.auth}`);
       return { ...state };
     },

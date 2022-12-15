@@ -39,6 +39,9 @@ export default {
       const response = yield call(addUser, action.payload);
       console.log(response);
       if (response.status === 201) {
+        yield put({
+          type: 'user/getStaffs',
+        });
         notification.success({
           message: 'Create success',
         });

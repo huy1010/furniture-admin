@@ -20,9 +20,11 @@ import { connect } from 'dva';
 const { Sider, Content } = Layout;
 function BasicLayout(props) {
   const { children, dispatch } = props;
-  let roles = localStorage.getItem('roles');
+  let roles = localStorage.getItem('role');
+  if (!roles) roles = ['USER'];
   roles = typeof roles === 'string' ? [roles] : roles;
   const isAdmin = roles.indexOf('ADMIN') !== -1;
+
   React.useEffect(() => {
     dispatch({
       type: 'category/getCategoryList',
@@ -104,25 +106,25 @@ function BasicLayout(props) {
               <span className={styles.menuTitle}>Khuyến Mãi</span>
             </Menu.Item>
             {isAdmin && (
-            <Menu.Item
-              className={styles.menuItems}
-              key="9"
-              icon={<TeamOutlined className={styles.menuIcons} />}
-              onClick={() => router.push('/users')}
-            >
-              <span className={styles.menuTitle}>Tài khoản</span>
-            </Menu.Item>
+              <Menu.Item
+                className={styles.menuItems}
+                key="9"
+                icon={<TeamOutlined className={styles.menuIcons} />}
+                onClick={() => router.push('/users')}
+              >
+                <span className={styles.menuTitle}>Tài khoản</span>
+              </Menu.Item>
             )}
-             {isAdmin && (
-            <Menu.Item
-              className={styles.menuItems}
-              key="10"
-              icon={<PieChartOutlined className={styles.menuIcons} />}
-              onClick={() => router.push('/report')}
-            >
-              <span className={styles.menuTitle}>Báo Cáo</span>
-            </Menu.Item>
-             )}
+            {isAdmin && (
+              <Menu.Item
+                className={styles.menuItems}
+                key="10"
+                icon={<PieChartOutlined className={styles.menuIcons} />}
+                onClick={() => router.push('/report')}
+              >
+                <span className={styles.menuTitle}>Báo Cáo</span>
+              </Menu.Item>
+            )}
           </Menu>
         </Sider>
       </Affix>

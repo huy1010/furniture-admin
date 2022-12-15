@@ -1,23 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect, useSelector } from 'dva';
 import styles from './styles.less';
 import { Menu, Dropdown, Spin, Button, Modal, Form, Input, Upload, Row, Col, Image } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import { DEFAULT_AVATAR } from '../../Utils/helper';
 
-export function ModalProfile({modalShowed, onFinish,onCancle, state, resetImage, setImageVariant, profile}) {
+export function ModalProfile({
+  modalShowed,
+  onFinish,
+  onCancle,
+  state,
+  resetImage,
+  setImageVariant,
+  profile,
+}) {
   var uploading = false;
   const [form] = Form.useForm();
+  useEffect(() => {
+    form.setFieldsValue({
+      username: profile.username,
+      firstName: profile.firstName,
+      email: profile.email,
+      phoneNo: profile.phoneNo,
+    });
+  }, [form, profile]);
   return (
-    <Modal 
-    title="THÔNG TIN CHI TIẾT"
-    className='modalProfile' 
-    okText='Lưu'
-    onOk={ () => onFinish(form.getFieldValue())}  
-    onCancel={() => onCancle()} 
-    cancelButtonProps={{ style: { display: 'none' } }}
-    visible={modalShowed}
-    width={700}
+    <Modal
+      title="THÔNG TIN CHI TIẾT"
+      className="modalProfile"
+      okText="Lưu"
+      onOk={() => {
+        onFinish(form.getFieldValue());
+        form.resetFields();
+      }}
+      onCancel={() => onCancle()}
+      cancelButtonProps={{ style: { display: 'none' } }}
+      visible={modalShowed}
+      width={700}
     >
       <Form
         name="update-profile"
@@ -38,7 +57,13 @@ export function ModalProfile({modalShowed, onFinish,onCancle, state, resetImage,
               <Col span={24} className={styles.image}>
                 <Spin spinning={uploading}>
                   <Image
-                    src={state.imageUrl !== '' ? state.imageUrl : (profile.imgUrl != null ? profile.imgUrl : DEFAULT_AVATAR)}
+                    src={
+                      state.imageUrl !== ''
+                        ? state.imageUrl
+                        : profile.imgUrl != null
+                        ? profile.imgUrl
+                        : DEFAULT_AVATAR
+                    }
                     width={200}
                     height={240}
                   ></Image>

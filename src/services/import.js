@@ -1,7 +1,7 @@
 import { request } from '../Utils/request';
-
+import { IMPORT_SERVICE } from '../Utils/constants';
 export async function getImports() {
-  return await request(`/api/imports`);
+  return await request(`${IMPORT_SERVICE}/imports`);
 }
 
 export function createImport(payload) {
@@ -20,7 +20,7 @@ export function createImport(payload) {
   formData['totalPrice'] = totalPrice;
   formData['importDetails'] = importDetailDto;
 
-  return request(`/api/imports`, {
+  return request(`${IMPORT_SERVICE}/imports`, {
     method: 'POST',
     body: JSON.stringify(formData),
   });

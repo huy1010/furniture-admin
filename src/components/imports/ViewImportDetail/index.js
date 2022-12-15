@@ -1,8 +1,8 @@
 import React from 'react';
-import { Modal, Table, Image, Button,Row,Col,Descriptions } from 'antd';
+import { Modal, Table, Image, Button, Row, Col, Descriptions } from 'antd';
 import { router } from 'umi';
 import styles from './styles.less';
-import {moneyConverter, toDate} from '../../../Utils/helper';
+import { moneyConverter, toDate } from '../../../Utils/helper';
 const pdfpreview = props => {
   router.push(`/import/invoice/${props.importDetails.importId}`, {
     items: props.importDetails.importDetails,
@@ -52,7 +52,7 @@ const ViewImportDetail = props => {
       title: 'Thành tiền',
       align: 'center',
       render: item => {
-        return moneyConverter(item.price*item.quantity);
+        return moneyConverter(item.price * item.quantity);
       },
     },
   ];
@@ -70,7 +70,7 @@ const ViewImportDetail = props => {
 
   return (
     <Modal
-     className='importDetail'
+      className="importDetail"
       width={1020}
       title="CHI TIẾT NHẬP HÀNG"
       visible={props.visible}
@@ -79,28 +79,36 @@ const ViewImportDetail = props => {
       okButtonProps={{ style: { display: 'none' } }}
     >
       <Row>
-      <Col span={20}>
+        <Col span={20}>
           <Descriptions>
-            <Descriptions.Item label="Email người nhập" labelStyle={{fontWeight: 'bold'}}> {props?.importDetails?.emailImporter}</Descriptions.Item>
-            <Descriptions.Item label="Ngày nhập" labelStyle={{fontWeight: 'bold'}}>
-              {props?.importDetails?.createdAt != undefined ? toDate(props?.importDetails?.createdAt) : ''}
+            <Descriptions.Item label="Người nhập" labelStyle={{ fontWeight: 'bold' }}>
+              {' '}
+              {props?.importDetails?.user?.firstName}
             </Descriptions.Item>
-            <Descriptions.Item label="Tổng giá trị" labelStyle={{fontWeight: 'bold'}}>{moneyConverter(props?.importDetails?.totalPrice)}</Descriptions.Item>
+            <Descriptions.Item label="Ngày nhập" labelStyle={{ fontWeight: 'bold' }}>
+              {props?.importDetails?.createdAt != undefined
+                ? toDate(props?.importDetails?.createdAt)
+                : ''}
+            </Descriptions.Item>
+            <Descriptions.Item label="Tổng giá trị" labelStyle={{ fontWeight: 'bold' }}>
+              {moneyConverter(props?.importDetails?.totalPrice)}
+            </Descriptions.Item>
           </Descriptions>
         </Col>
-        <Col span={1} offset={2}  >
-          <Button className={styles.buttonExport} onClick={() => pdfpreview(props)}>Export</Button>
+        <Col span={1} offset={2}>
+          <Button className={styles.buttonExport} onClick={() => pdfpreview(props)}>
+            Export
+          </Button>
         </Col>
         <Col span={19} offset={4}>
-        <Table 
-        columns={columns} 
-        bordered 
-        dataSource={data}   
-        pagination={{ position: ['none', 'none'] }}>
-        </Table>
+          <Table
+            columns={columns}
+            bordered
+            dataSource={data}
+            pagination={{ position: ['none', 'none'] }}
+          ></Table>
         </Col>
       </Row>
-     
     </Modal>
   );
 };
